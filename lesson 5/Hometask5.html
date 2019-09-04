@@ -7,7 +7,6 @@
 </head>
 <body>
   <header>
-      <header>
           <a name="top"></a>
           <figure>
             <img
@@ -18,84 +17,77 @@
                 alt="Пицца"/>
           </figure>
           <h1 id="top"><strong>Пицца Лисицца</strong></h1>
-          <h2><strong>45 минут или пицца бесплатно<strong></h2>
+          <h2><strong>45 минут или пицца бесплатно</strong></h2>
   </header>
-  <form action="http://fe.it-academy.by/TestForm.php" autocomplete=off" method="GET"/>
+  <form action="http://fe.it-academy.by/TestForm.php" autocomplete=off" method="POST">
   <fieldset>
       <legend>Данные заказачика пиццы</legend>
 Имя пользователя:<br>
-<input type="text"
+<input style="font-family: Helvetica;"
+       type="text"
        name="username"
        value="" 
        maxlength="12" 
-       border:15px
-       required
        placeholder="Введите ваше имя"
        pattern="[A-Za-z]{1,12}"
        title="12 символов (eng)"
-       font-family:Helvetica
-       autocomplete=off  /><br/>
+       required /><br/>
+
 Пороль:<br>​
-<input 
+<input style="font-family:Helvetica;"
        type="password" 
        name="password"
-       value=""  
-       border:10px
-       required 
+       value=""   
        placeholder="Введите ваш пороль"
-       pattern="[A-Za-z]{7}"
+       pattern="[A-Za-z0-9]{7}"
        title="7 символов (eng+цифры)"
-       font-family:Helvetica; /><br/>
+       required/><br/>
 <p>Пол:<br>
-<input type="checkbox" 
-       name="gender" 
+<input style="font-family: Helvetica;"
+       type="checkbox" 
+       name="gender1" 
        value="a1" 
-       font-family:Helvetica
        disabled>Мужчина<br>
 <input type="checkbox" 
-       name="gender" 
+       name="gender2" 
        value="a2"
-       font-family:Helvetica 
        disabled>Женщина<br>
   </p>
 Email:<br>
-<input type="email"
+<input style="font-family: Helvetica;"
+       type="email"
        name="email"
        value=""
-       border:10px
-       font-family:Helvetica
        required
        placeholder="Введите ваш email"
        maxlength="40"
        autocomplete="on" /><br>  
 Телефон:​<br>
-  <input type="tel"
+  <input style="font-family:Helvetica;"
+         type="tel"
          name="phone"
-         style=border:10px;
          maxlength="30"
-         font-family:Helvetica
          required
          placeholder="Введите ваш телефон"
-         pattern="\+375\-[0-9]{2}-[0-9]{7}"
+         pattern="\+\-[0-9]{3}-[0-9]{2}-[0-9]{7}"
          title="+(375)-XX-XXXXX"
          autocomplete=off/>​<br> 
 Адрес доставки:<br>
-      <input type="text"
+      <input style="font-family: Helvetica;"
+             type="text"
              name="address"
              maxlength="40"
              placeholder="Введите адрес доставки"
              required
-             font-family:Helvetica
              autocomplete=off/><br>
      </fieldset>
      <fieldset>
         <legend>Данные заказа</legend>
 Название пиццы:<br>
-        <input type="text"
+        <input style="font-family: Helvetica;"
+               type="text"
                name="title"
                value=""
-               border:10px
-               font-family:Helvetica
                required 
                placeholder="Введите название пиццы"
                autocomplete=off/>​<br>
@@ -110,8 +102,8 @@ Email:<br>
 Оплата:<br>
         <input type="radio"
                name="cash"
-               value="Карта">Карт<br>
-        <input  type="radio"
+               value="Карта">Карта<br>
+        <input type="radio"
                name="cash" 
                value="Налиные"
                autocomplete=off>Налиные<br>
