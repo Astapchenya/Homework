@@ -1,22 +1,16 @@
 body{
   background-color: aquamarine
 }
-
-
-@import url('https://fonts.googleapis.com/css?family=Pacifico&display=swap&subset=cyrillic');
-p{ 
-  font-family: 'Pacifico', cursive;
-  font-size: 20px
-}
-
-@import url('https://fonts.googleapis.com/css?family=Lobster&display=swap&subset=cyrillic');
+@import url('https://fonts.googleapis.com/css?family=Caveat|Dancing+Script|Lobster&display=swap&subset=cyrillic');
 h1{
   font-family: 'Lobster', cursive;
-  font-size: 35px
+  font-size: 30px
 }
-@import url('https://fonts.googleapis.com/css?family=Caveat&display=swap&subset=cyrillic');
 h3{
-  font-family: 'Caveat', cursive;
+  font-family: 'Dancing Script', cursive;
   font-size: 25px
 }
-
+p{ 
+  font-family: 'Caveat', cursive;
+  font-size: 20px
+}

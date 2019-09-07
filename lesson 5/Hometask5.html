@@ -21,98 +21,117 @@
   <form action="http://fe.it-academy.by/TestForm.php" autocomplete=off" method="POST">
   <fieldset>
       <legend>Данные заказачика пиццы</legend>
-Имя пользователя:<br>
-<input style="font-family: Helvetica;"
-       type="text"
-       name="username"
-       value="" 
-       maxlength="12" 
-       placeholder="Введите ваше имя"
-       pattern="[A-Za-z]{1,12}"
-       title="12 символов (eng)"
-       required /><br/>
-
-Пороль:<br>​
-<input style="font-family:Helvetica;"
-       type="password" 
-       name="password"
-       value=""   
-       placeholder="Введите ваш пороль"
-       pattern="[A-Za-z0-9]{7}"
-       title="7 символов (eng+цифры)"
-       required/><br/>
-<p>Пол:<br>
-<input style="font-family: Helvetica;"
-       type="checkbox" 
-       name="gender1" 
-       value="a1" 
-       disabled>Мужчина<br>
-<input type="checkbox" 
-       name="gender2" 
-       value="a2"
-       disabled>Женщина<br>
-  </p>
-Email:<br>
-<input style="font-family: Helvetica;"
-       type="email"
-       name="email"
-       value=""
-       required
-       placeholder="Введите ваш email"
-       maxlength="40"
-       autocomplete="on" /><br>  
-Телефон:​<br>
-  <input style="font-family:Helvetica;"
+      <div>
+          <label for="name">Имя пользователя:</label><br>
+          <input style="font-family: Helvetica;"
+          type="text"
+          id="name"
+          name="username"
+          maxlength="12" 
+          placeholder="Введите ваше имя"
+          pattern="[A-Za-z]{1,12}"
+          title="12 символов (eng)"
+          size="25"/><br/>
+      </div>
+     ​ <div>
+          <label for="password">Пороль:</label><br>
+          <input style="font-family:Helvetica;"
+          type="password" 
+          name="password"
+          id="password"  
+          placeholder="Введите ваш пороль"
+          pattern="[A-Za-z0-9]{7}"
+          title="7 символов (eng+цифры)"
+          required
+          size="25"/><br/>
+      </div>
+    ​  <div>
+          <label for="mail">Пол:</label><br>
+          <input style="font-family:Helvetica;"
+          type="checkbox"
+          id="gender1" 
+          name="gender1" 
+          value="a1" 
+          disabled>Мужчина<br>
+         <input type="checkbox" 
+         id="gender2" 
+         name="gender2" 
+         value="a2"
+         disabled>Женщина<br>
+      </div>
+      <div>
+         <label for="email">Email:</label><br>
+         <input style="font-family:Helvetica;"
+         type="email"
+         id="email"
+         required
+         placeholder="Введите ваш email"
+         maxlength="40"
+         autocomplete="on"
+         size="25"/><br>  
+      </div>
+      <div>
+         <label for="tel">Телефон:​</label><br>
+         <input style="font-family:Helvetica;"
          type="tel"
-         name="phone"
+         id="tel"
          maxlength="30"
          required
          placeholder="Введите ваш телефон"
          pattern="\+\-[0-9]{3}-[0-9]{2}-[0-9]{7}"
          title="+(375)-XX-XXXXX"
-         autocomplete=off/>​<br> 
-Адрес доставки:<br>
-      <input style="font-family: Helvetica;"
-             type="text"
-             name="address"
-             maxlength="40"
-             placeholder="Введите адрес доставки"
-             required
-             autocomplete=off/><br>
-     </fieldset>
-     <fieldset>
+         autocomplete=off
+         size="25"/>​<br> 
+      </div>
+      <div>
+         <label for="address">Адрес доставки:​</label><br>
+         <input style="font-family:Helvetica;"
+         type="text"
+         id="address"
+         maxlength="40"
+         placeholder="Введите адрес доставки"
+         required
+         autocomplete=off
+         size="25"/><br>
+      </div>
+      </fieldset>
+      <fieldset>
         <legend>Данные заказа</legend>
-Название пиццы:<br>
-        <input style="font-family: Helvetica;"
-               type="text"
-               name="title"
-               value=""
-               required 
-               placeholder="Введите название пиццы"
-               autocomplete=off/>​<br>
-Количество:<br>
-        <input 
-               type="number" 
-               name="quantity" 
-               min="1" max="10"
-               required
-               autocomplete=off/><br>
-Оплата:<br>
-        <input type="radio"
-               name="cash"
-               value="Карта">Карта<br>
-        <input type="radio"
-               name="cash" 
-               value="Налиные"
-               autocomplete=off>Налиные<br>
-        <p><b>Введите ваш отзыв:</b></p>
-        <p><textarea 
+      <div>
+         <label for="pizzaname">Название пиццы:​</label><br>
+         <input style="font-family:Helvetica;"
+         type="text"
+         id="pizzaname"
+         required 
+         placeholder="Введите название пиццы"
+         autocomplete=off
+         size="25"/>​<br>
+       </div>
+       <div>
+         <label for="quantity">Количество:</label><br>
+         <input style="font-family:Helvetica;"
+         type="number"  
+         min="1" max="10"
+         required
+         autocomplete=off/><br>
+       </div>
+       <div>
+            <br>Оплата:<br>
+          <input type="radio"
+          style="font-family:Helvetica;"
+          id="cash1"
+          value="Карта">Карта<br>
+          <input type="radio"
+          id="cash2"
+          autocomplete=off 
+          value="Налиные">Налиные<br>
+        </div>
+        <p><textarea title="Оставьте ваш комментарий"
           rows="10" 
           cols="45" 
           name="text"
-          placeholder="Оставьте ваш комментарий"
-          title="Оставьте ваш комментарий"
-      ></textarea></p>
+          placeholder="Оставьте ваш комментарий">
+          </textarea>
     </fieldset>
   </body>
   <input type="submit" formtarget="_blank"/>
