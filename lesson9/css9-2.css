@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css?family=Bad+Script|Marck+Script|Petit+Formal+Script&display=swap&subset=cyrillic');
+
+h1{
+  font-family: 'Marck Script', cursive;
+  font-size: 50px;
+  text-align: center;
+}
+
+body{
+  background-image: url(.//wood_pattern_@2X.png);
+  background-repeat: repeat;
+}
+figure {
+    display: block; 
+    width: 300px; 
+    height: 250px; 
+    margin: 0 10px 10px 0; 
+    text-align: center; 
+    float: left;
+   }
+
+   figure:hover{
+     transform: translate(-10px, -10px);
+     transition: 3s;
+   }
+figure img {
+    border: 2px solid #ebbb36;
+    border-radius: 10px;
+   }
+figure p {
+    margin-bottom: 0; 
+}
+
+figcaption {
+  font-family: 'Bad Script', cursive;
+  font-size: 20px;
+  text-align: center;
+}
+
+
+
+.icons{
+ background: url(.//sprite.png) no-repeat;
+ height: 60px;
+ width: 60px;
+ display: inline-block;
+}
+.vk-ico{
+  background-position: 0 0px;
+}
+.vk-ico:hover{
+ background-position: 0 -60px;
+}
+.fb-ico{
+ background-position: -60px 0;
+}
+.fb-ico:hover{
+ background-position: -60px -60px;
+}
+.tw-ico{
+ background-position: -120px 0;
+}
+.tw-ico:hover{ 
+  background-position: -120px -60px;
+}
+
+#social-icons{
+width: 250px;
+height: 150px;
+background-color:#e4a41b77;
+opacity: 0.8;
+border: 2px solid #ebbb36;
+border-radius: 10px;
+}
+#social-icons:hover{
+  transform: scale(1.2);
+  transition: 2s;
+}
+
+.social-icons:hover::after{
+  content: attr(data-title);
+  position: absolute;
+  left:0; right: 0; bottom: 5px;
+  right:0px;
+  top: 145px;
+  width: 230px;
+  height: 50px;
+  background-color: #e4a41b77;
+  opacity: 0.8;
+  text-align: center;
+  z-index: 1;
+  font-size: 20px;
+  padding:5px 10px;
+  border: 2px solid #ebbb36;
+  border-radius: 10px;
+  font-family: 'Petit Formal Script', cursive;
+}
+  
+.text{
+ font-size: 20px; 
+ font-family: 'Petit Formal Script', cursive;
+ float: left;
+
+}
+
+
+
+ 
+
+
