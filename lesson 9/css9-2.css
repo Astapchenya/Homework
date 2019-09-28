@@ -7,7 +7,7 @@ h1{
 }
 
 body{
-  background-image: url(.//wood_pattern_@2X.png);
+  background-image: url(./wood_pattern_@2X.png);
   background-repeat: repeat;
 }
 figure {
@@ -37,10 +37,8 @@ figcaption {
   text-align: center;
 }
 
-
-
 .icons{
- background: url(.//sprite.png) no-repeat;
+ background: url(./sprite.png) no-repeat;
  height: 60px;
  width: 60px;
  display: inline-block;
@@ -101,6 +99,11 @@ border-radius: 10px;
  font-family: 'Petit Formal Script', cursive;
  float: left;
 
+}
+.container{
+  position: absolute;
+  top:10px;
+  left:10px;
 }
 
 
